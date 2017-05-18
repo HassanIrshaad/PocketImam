@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#da0b0b</color>
+    <color name="statBar1">#01654c</color>
+    <color name="darker">#013226</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgColor">#f53f3f</color>
+    <color name="bgColor1">#019771</color>
+    <color name="textColor">#FFFFFF</color>
+    <color name="tableBg">#F5F5F5</color>
+    <color name="tableText">#888888</color>
+    <color name="statusBar">#636265</color>
+</resources>

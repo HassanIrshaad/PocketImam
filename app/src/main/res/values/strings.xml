@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PocketImam</string>
+    <string name="confirm">Confirm</string>
+    <string name="description">Welcome to PocketImam, this app acts as your personal Imam to help you read all 5 prayers throughout the day.</string>
+    <string name="description1">Please choose a prayer to begin.</string>
+    <string name="credits">Hassan Irshaad, Copyright © 2017</string>
+    <string name="fajr">Fajr</string>
+    <string name="zuhr">Zuhr</string>
+    <string name="asr">Asr</string>
+    <string name="magrhib">Magrhib</string>
+    <string name="columnHeader1">Rakat</string>
+    <string name="columnHeader2">no. of Rakat</string>
+    <string name="isha">Isha</string>
+    <string name="sunnah">Sunnah</string>
+    <string name="farz">Farz</string>
+    <string name="time">Approximate time to read prayer</string>
+    <string name="title">Pocket ☪ Imam</string>
+    <string-array name="Prayers">
+        <item>Fajr</item>
+        <item>Zuhr</item>
+        <item>Asr</item>
+        <item>Magrhib</item>
+        <item>Isha</item>
+    </string-array>
+</resources>

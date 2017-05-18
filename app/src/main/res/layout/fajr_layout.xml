@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bgColor1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/statBar1"
+        android:text="@string/title"
+        android:paddingTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:fontFamily="helvetica"
+        android:textStyle="bold"
+        android:letterSpacing=".75"
+        android:id="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:textSize="35sp"
+        android:textColor="@color/textColor"
+        android:text="@string/fajr" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="130dp"
+        android:stretchColumns="*"
+        android:id="@+id/tableLayout">
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/statusBar"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/textColor"
+                android:text="@string/columnHeader1"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="18sp"
+                android:textColor="@color/textColor"
+                android:text="@string/columnHeader2"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tableBg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/tableText"
+                android:text="@string/sunnah"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/tableText"
+                android:text="2"
+                />
+            </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/tableBg"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/tableText"
+                android:text="@string/farz"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/tableText"
+                android:text="2"
+                />
+        </TableRow>
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/statusBar"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:text="@string/time"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:textSize="15sp"
+                android:textColor="@color/textColor"
+                android:text="20 minutes"
+                />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tableLayout"
+        android:layout_above="@+id/play_button"
+        android:id="@+id/countdown"
+        android:text=" "
+        android:textColor="@color/textColor"
+        android:textSize="150sp"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tableLayout"
+        android:layout_above="@+id/play_button"
+        android:id="@+id/rakat_title"
+        android:text=" "
+        android:textColor="@color/textColor"
+        android:textSize="80sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/play_button"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/textColor"
+        android:text="Start Prayer"
+        android:background="@drawable/red_button"
+        android:layout_above="@+id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="77dp" />
+
+    <Button
+        android:id="@+id/back_button"
+        style="@style/button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/red_button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
